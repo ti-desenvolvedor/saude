@@ -14,8 +14,8 @@ const mix = require('laravel-mix');
 mix
     .sass('resources/views/admin/scss/bootstrap-4.scss', 'public/admin/css/bootstrap.css'            )
     .sass('resources/views/admin/scss/bootstrap-4-theme.scss','public/admin/css/bootstrap-4-theme.css')
-.styles('node_modules/admin-lte/dist/css/adminlte.css', 'public/admin/css/adminlte.css')
-    // .sass('node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss','public/admin/css/fontawesome.css')
+    .styles('node_modules/admin-lte/dist/css/adminlte.css', 'public/admin/css/adminlte.css')
+    a.sass('node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss','public/admin/css/fontawesome.css')
     .styles(
         [
             "node_modules/select2/dist/css/select2.css",

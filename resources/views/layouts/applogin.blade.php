@@ -8,14 +8,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-
-<link rel="stylesheet" href="{{url(mix('admin/css/theme-bootstrap4-sweetalert2.css'))}}">
-<link rel="stylesheet" href="{{url(mix('admin/css/toastr.css'))}}">
-<link rel="stylesheet" href="{{url(mix('admin/css/adminlte.css'))}}">
-<link rel="stylesheet" href="{{url(mix('admin/css/bootstrap.css'))}}">
-<link rel="stylesheet" href="{{url(mix('admin/css/bootstrap-4-theme.css'))}}">
-<link rel="stylesheet" href="{{url(mix('admin/css/select2.css'))}}">
+.
+    <link rel="stylesheet" href="{{url(mix('admin/css/fontawesome.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/theme-bootstrap4-sweetalert2.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/toastr.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/adminlte.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/bootstrap.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/bootstrap-4-theme.css'))}}">
+    <link rel="stylesheet" href="{{url(mix('admin/css/select2.css'))}}">
 @yield('style')
 </head>
 <body class="hold-transition login-page">

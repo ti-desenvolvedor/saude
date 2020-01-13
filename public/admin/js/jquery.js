@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -10719,15 +10730,16 @@ return jQuery;
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/jquery/dist/jquery.js ./resources/views/admin/scss/bootstrap-4.scss ./resources/views/admin/scss/bootstrap-4-theme.scss ***!
-  \****************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/jquery/dist/jquery.js ./resources/views/admin/scss/bootstrap-4.scss ./resources/views/admin/scss/bootstrap-4-theme.scss ./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss ***!
+  \***********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Desenvolvimento\www\saude\node_modules\jquery\dist\jquery.js */"./node_modules/jquery/dist/jquery.js");
 __webpack_require__(/*! D:\Desenvolvimento\www\saude\resources\views\admin\scss\bootstrap-4.scss */"./resources/views/admin/scss/bootstrap-4.scss");
-module.exports = __webpack_require__(/*! D:\Desenvolvimento\www\saude\resources\views\admin\scss\bootstrap-4-theme.scss */"./resources/views/admin/scss/bootstrap-4-theme.scss");
+__webpack_require__(/*! D:\Desenvolvimento\www\saude\resources\views\admin\scss\bootstrap-4-theme.scss */"./resources/views/admin/scss/bootstrap-4-theme.scss");
+module.exports = __webpack_require__(/*! D:\Desenvolvimento\www\saude\node_modules\@fortawesome\fontawesome-free\scss\fontawesome.scss */"./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss");
 
 
 /***/ })
