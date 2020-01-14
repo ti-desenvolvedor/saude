@@ -49,6 +49,36 @@
 
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
+        Teste
+        <!-- Right Side Of Navbar -->
+                      <ul class="nav-item dropdown">
+                        <!-- Authentication Links -->
+                        @guest
+                        <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                      
+                      
+                        @else
+                        <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                        <li class="nav-item dropdown">
+                          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                          </a>
+                      
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                           document.getElementById('logout-form').submit();">
+                              {{ __('Logout') }}
+                            </a>
+                      
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              @csrf
+                            </form>
+                          </div>
+                        </li>
+                        @endguest
+                      </ul>
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
@@ -160,6 +190,19 @@
             <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
+              @if (Route::has('login'))
+              <div class="top-right links">
+                @auth
+                <a href="{{ url('/home') }}">Home</a>
+                @else
+                <a href="{{ route('login') }}">Login</a>
+
+                @if (Route::has('register'))
+                <a href="{{ route('register') }}">Register</a>
+                @endif
+                @endauth
+
+
             <a href="#" class="d-block">Alexander Pierce</a>
           </div>
         </div>
@@ -693,6 +736,11 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <div class="container-fluid">
+          @if (\Session::has('success'))
+          <div class="alert alert-success">
+            <p>{{ \Session::get('success') }}</p>
+          </div><br />
+          @endif
           <div class="row mb-2">
             <div class="col-sm-6">
               <h1>Widgets</h1>

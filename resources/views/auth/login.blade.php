@@ -11,8 +11,8 @@
             <p class="login-box-msg">Sign in to start your session</p>
 
             <div class="card-body">
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
+             <form method="POST" action="{{ route('login') }}">
+                @csrf
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" placeholder="Email">
                     <div class="input-group-append">
@@ -33,6 +33,11 @@
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
+                    @if ($errors->has('password'))
+                    <span class="invalid-feedback">
+                        <strong>{{ $errors->first('password') }}</strong>
+                    </span>
+                    @endif
                     @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
