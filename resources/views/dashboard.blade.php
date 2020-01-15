@@ -2496,9 +2496,7 @@
         </div>
         <!-- ./row -->
 
-
-
-    </div><!-- /.container-fluid -->
+    </div><!-- /.container-fluid t -->
     <div class="modal fade" id="modal-default">
       <div class="modal-dialog">
         <div class="modal-content">
