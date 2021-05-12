@@ -24,7 +24,7 @@
         "@sweetalert2/theme-bootstrap-4": "^3.1.0",
         "admin-lte": "^3.0.1",
         "bootstrap": "^4.4.1",
-        "chart.js": "^2.9.3",
+        "chart.js": "^2.9.4",
         "datatables.net-autofill-bs4": "^2.3.4",
         "datatables.net-bs4": "^1.10.20",
         "datatables.net-buttons-bs4": "^1.6.1",
