@@ -43,7 +43,7 @@
         "icheck-bootstrap": "^3.0.1",
         "ionicons": "^4.6.3",
         "jquery": "^3.4.1",
-        "jszip": "^3.2.2",
+        "jszip": "^3.7.0",
         "overlayscrollbars": "^1.10.0",
         "pdfmake": "^0.1.63",
         "popper.js": "^1.16.0",
